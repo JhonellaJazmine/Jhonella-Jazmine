@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhonella Jazmine's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/logo-black.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/719ad166ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello</p>
+                <h1>I'm <span>Jhonella Jazmine</span><br>an Aspiring Software Engineer.</h1>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/JhonellaJazz/"target="blank"><i class="fa-brands fa-square-facebook"></i></i></a>
+                    <a href="https://www.linkedin.com/in/jhonella-jazmine-orquillo-237b74266/"target="blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/JhonellaJazmine"target="blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Dedicated, enthusiastic, and passionate BS Computer Science graduate from Las Piñas, aspiring to combine educational background with progressive experience, in writing code and designing solutions, to excel as Professional in the field of tech.</p>
+                
+                <div class="tabs-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('more')">More</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web App interfaces</li>
+                        <li><span>Fullstack Development</span><br>Front-end and Back-end Development</li>
+                        <li><span>App Development</span><br>Building Web, Desktop, and Mobile Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2023</span><br>BS Computer Science<br>
+                            Technological University of the Philippines - Manila</li>
+                        <li><span>2017-2019</span><br>Science, Technology, Engineering, and Mathematics strand<br>
+                            STI College - Las Piñas</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="more">
+                    <ul>
+                        <li><span>Age</span><br>23 Years Old</li>
+                        <li><span>Pronoun</span><br>She / Her</li>
+                        <li><span>Nicknames</span><br>Nella & Jazmine</li>
+                        <li><span>Hobbies</span><br>Watching Series, Reading books, & Gaming</li>
+                    </ul>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <!-- <i class="fa-solid fa-crop"></i> -->
+                    <h2>Frontend Development</h2>
+                    <!-- <p>I have knowledge in Front-End Development using<br><br> -->
+                        <ul>
+                            <li><i class="fa-brands fa-html5"> HTML5</i>  </li>
+                            <li><i class="fa-brands fa-css3-alt"> CSS3</i> </li>
+                            <li><i class="fa-brands fa-js"> JavaScript</i>  </li>
+                            <li><i class="fa-brands fa-bootstrap"> Bootstrap</i> </li>
+                            <li><i class="fa-brands fa-react"> ReactJS</i> </li>
+                            <li><i class="fa-brands fa-vuejs"> VueJS</i> </li>
+
+                        </ul>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <h2>Back-End Development</h2>
+                    <ul>
+                        <br>
+                        <li><i class="fa-solid fa-file-code"> PHP</i></li>
+                        <li><i class="fa-solid fa-cogs"> Django</i></li>
+                        <li><i class="fa-solid fa-cube"> CodeIgniter</i></li>
+                        <li><i class="fa-solid fa-database"> MySql</i></li>
+                        <li><i class="fa-solid fa-tools"> GraphQL</i></li>
+
+                        <!-- Add more list items if needed -->
+                    </ul>
+                </div>
+                <div>
+                    <h2>App Development</h2>
+                    <ul>
+                        <li><i class="fa-brands fa-python"> Python</i></li>
+                        <li><i class="fa-solid fa-gem"> Ruby on Rails</i></li>
+                        <li><i class="fa-brands fa-java"> Java</i></li>
+                        <li><i class="fa-solid fa-code"> C/C++</i></li>
+                        <li><i class="fa-solid fa-microchip"> Arduino</i></li>
+
+
+                        <!-- Add more items for other technologies if needed -->
+                    </ul>
+                </div>
+
+                
+            </div>
+            <div class="services-tool">
+
+                <div style="padding: 30px; transition: background 0.3s ease, transform 0.3s ease;" onmouseover="this.style.background='#ff004f'; this.style.transform='translateY(-10px)';" onmouseout="this.style.background=''; this.style.transform='';">
+
+                <h2>Development Tools</h2>
+                <div class="row">
+                    <div class="col">
+                       
+                            <ul>
+                                <li><i class="fa-solid fa-tools"> VS Code</i></li>
+                                <li><i class="fa-solid fa-tools"> Sublime Text</i></li>
+                                <li><i class="fa-solid fa-tools"> Jupyter Notebook</i></li>
+                                <li><i class="fa-solid fa-tools"> Git / Github</i></li>
+                                <li><i class="fa-solid fa-tools"> Google Colab</i></li>
+                                <li><i class="fa-solid fa-tools"> Roboflow</i></li>
+                            </ul>
+    
+                    </div>
+                    <div class="col">
+                            <ul>
+                                <li><i class="fa-solid fa-tools"> Cloudinary</i></li>
+                                <li><i class="fa-solid fa-tools"> Arduino IDE</i></li>
+                                <li><i class="fa-solid fa-tools"> XAMPP</i></li>
+                                <li><i class="fa-solid fa-tools"> Figma</i></li>
+                                <li><i class="fa-solid fa-tools"> Canva</i></li>
+                                <li><i class="fa-solid fa-tools"> MS Office</i></li>
+                                <!-- Add more items for other technologies if needed -->
+                            </ul>
+                    </div>
+                    <div class="col">
+                       
+                        <ul>
+                            <li><i class="fa-solid fa-tools"> Code::Blocks</i></li>
+                            <li><i class="fa-solid fa-tools"> MARS</i></li>
+                            <li><i class="fa-solid fa-tools"> Ubuntu</i></li>
+                            <li><i class="fa-solid fa-tools"> Lucid Chart</i></li>
+                            <li><i class="fa-solid fa-tools"> Draw.io</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+</div>
+
+        </div>
+    </div>
+
+    <!-- ------my works----- -->
+    <!-- <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.gif">
+                    <div class="layer">
+                        <h3>Campus Organization Recruitment + Freedom Wall App</h3>
+                        <p>A web application that is intended to help students apply in a campus organization, 
+                            and be updated with campus and organizations' news, events, and announcements together 
+                            with an admin controller to regulate posts.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.gif">
+                    <div class="layer">
+                        <h3>Simple To-Do List App</h3>
+                        <p> A simple to-do list application, developed using React Native, 
+                            where user can add, mark as done, delete, and see number of pending tasks.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.gif">
+                    <div class="layer">
+                        <h3>Filipino Cuisine Food Recommendation System</h3>
+                        <p>A local food recommendation system based on the available ingredients that the user selected.
+                            Developed in Python and Python libraries such as Pandas, Tkinter, and Sklearn. </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/JhonellaJazmine" target="blank" class="btn">See more</a>
+        </div>
+    </div> -->
+
+   <!-- ------my works----- -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <h2>Campus Organization Recruitment + Freedom Wall App</h2>
+                <br>
+                <img src="images/clikit.png" onclick="openModal('modal1')">
+            </div>
+            <div class="work">
+                <h2>Simple To-Do List App</h2><br><br>
+                <img src="images/todo.png" onclick="openModal('modal2')">
+            </div>
+            <div class="work">
+                <h2>Filipino Cuisine Food Recommendation System</h2>
+                <br>
+                <img src="images/recipe.png" onclick="openModal('modal3')">
+            </div>
+        </div>
+        
+        <div class="work-list">
+            <div class="work">
+                <h2>Booking Looking - Services Booking App</h2>
+                <br>
+                <img src="images/services.png" onclick="openModal('modal7')">
+            </div>
+            <div class="work">
+                <h2>Bidding App</h2><br><br>
+                <img src="images/bid.png" onclick="openModal('modal8')">
+            </div>
+            <div class="work">
+                <h2>Toy App</h2>
+                <br>
+                <img src="images/toyapp.png" onclick="openModal('modal9')">
+            </div>
+        </div>
+
+        <div class="work-list">
+            <div class="work">
+                <h2>Mr Bin - Smart Trash Bin</h2>
+                <br>
+                <img src="images/smarttrashbin.jpg" onclick="openModal('modal4')">
+            </div>
+            <div class="work">
+                <h2>ATM Simulator</h2><br><br>
+                <img src="images/bank.png" onclick="openModal('modal5')">
+            </div>
+            <div class="work">
+                <h2>APPEI - Automated PPE Inspection for Kitchen Staff using
+                    Object Recognition with QR Code Clocking System</h2>
+                <br>
+                <img src="images/appei.png" onclick="openModal('modal6')">
+            </div>
+        </div>
+
+        <!-- <a href="https://github.com/JhonellaJazmine" target="_blank" class="btn">See more</a> -->
+    </div>
+</div>
+
+
+<!-- Modal 1 -->
+<div id="modal1" class="modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+            </div>
+            <div class="modal-body" style="display: flex; align-items: center;">
+                <div class="col-md-6 px-4 mb-4"> <!-- Added mb-4 for bottom margin -->
+                    <img src="images/clikit.png" class="img-fluid" style="max-height: 500px; padding-right: 20px;">
+                </div>
+                <div class="col-md-6 px-4">
+                    <h3>Campus Organization Recruitment + Freedom Wall App</h3>
+                    <br>
+                    <p>A web application that helps students apply in a campus organization, and be updated with campus and organizations' news, events, and announcements together with an admin controller to regulate posts.</p>
+                    
+                    <br><br>
+                    <p><b>Technologies:</b> PHP, CodeIgniter, XAMPP, HTML, CSS, Javascript, JQuery, MySql, and Visual Studio Code</p>
+                    <br><br>
+                    <p><b>Role:</b> UI / UX Designer, Front-end Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal 2 -->
+<div id="modal2" class="modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+            </div>
+            <div class="modal-body" style="display: flex; align-items: center;">
+                <div class="col-md-6 px-4 mb-4"> <!-- Added mb-4 for bottom margin -->
+                    <img src="images/todo.png" class="img-fluid" style="max-height: 500px; padding-right: 20px;">
+                </div>
+                <div class="col-md-6 px-4">
+                    <h3>Simple To-Do List App</h3><br>
+                    <p>A simple to-do list application developed using React Native, where users can add, mark as done, delete, and see the number of pending tasks.</p><br><br>
+                    <p><b>Technologies:</b>React Native, Expo, Visual Studio Code</p><br><br>
+                    <p><b>Role:</b> Front-end and Back-end Developer </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal 3 -->
+<div id="modal3" class="modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+            </div>
+            <div class="modal-body" style="display: flex; align-items: center;">
+                <div class="col-md-6 px-4 mb-4"> <!-- Added mb-4 for bottom margin -->
+                    <img src="images/recipe.png" class="img-fluid" style="max-height: 500px; padding-right: 20px;">
+                </div>
+                <div class="col-md-6 px-4">
+                    <h3>Filipino Cuisine Food Recommendation System</h3>
+                    <br>
+                    <p>A local food recommendation system based on the available ingredients that the user selected. Developed in Python and Python libraries such as Pandas, Tkinter, and Sklearn.</p>
+                    <br><br>
+                    <p><b>Technologies:</b> Python, Pandas, Tkinter, Sklearn, Visual Studio Code</p>
+                    <br><br>    
+                    <p><b>Role:</b> Front-end and Back-end Developer</p>
+                    <!-- Add any additional information here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal4" class="modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal('modal4')">&times;</span>
+            </div>
+            <div class="modal-body" style="display: flex; align-items: center;">
+                <div class="col-md-6 px-4 mb-4"> <!-- Added mb-4 for bottom margin -->
+                    <img src="images/smarttrashbin.jpg" class="img-fluid" style="max-height: 500px; padding-right: 20px;">
+                </div>
+                <div class="col-md-6 px-4">
+                    <h3>Mr. Bin - Smart Trashbin</h3>
+                    <br>
+                    <p>A smart trash bin prototype made using arduino programming. A digital sensor and a servo motor was the main hardware of this smart trash bin prototype.</p>
+                    <br><br>
+                    <p><b>Technologies:</b> Arduino, IoT, ArduinoIDE</p>
+                    <br><br>    
+                    <p><b>Role:</b> IoT Developer</p>
+                    <!-- Add any additional information here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal5" class="modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal('modal5')">&times;</span>
+            </div>
+            <div class="modal-body" style="display: flex; align-items: center;">
+                <div class="col-md-6 px-4 mb-4"> <!-- Added mb-4 for bottom margin -->
+                    <img src="images/bank.png" class="img-fluid" style="max-height: 500px; padding-right: 20px;">
+                </div>
+                <div class="col-md-6 px-4">
+                    <h3>ATM Simulator</h3>
+                    <br>
+                    <p>A bank simulation program written in C programming where you can enroll a bank account, do a bank transaction, and have an administrator access.</p>
+                    <br><br>
+                    <p><b>Technologies:</b> C, Notepad, Visual Studio Code</p>
+                    <br><br>    
+                    <p><b>Role:</b> Front-end and Back-end Developer</p>
+                    <!-- Add any additional information here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal6" class="modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal('modal6')">&times;</span>
+            </div>
+            <div class="modal-body" style="display: flex; align-items: center;">
+                <div class="col-md-6 px-4 mb-4"> <!-- Added mb-4 for bottom margin -->
+                    <img src="images/appei.png" class="img-fluid" style="max-height: 500px; padding-right: 20px;">
+                </div>
+                <div class="col-md-6 px-4">
+                    <h3>APPEI - Automated PPE Inspection for Kitchen Staff using
+                        Object Recognition with QR Code Clocking System</h3>
+                    <br>
+                    <p>A web based real-time PPE inspection system that detects PPE such as
+                        face masks and gloves; And also integrated with QR Code Clocking
+                        System for employee time in / time out.</p>
+                    <br><br>
+                    <p><b>Technologies:</b> Python, Django, YoloV5, OpenCV, Jupyter Notebook, Roboflow, Visual Studio Code</p>
+                    <br><br>    
+                    <p><b>Role:</b> Front-end and Back-end Developer</p>
+                    <!-- Add any additional information here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal7" class="modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal('modal7')">&times;</span>
+            </div>
+            <div class="modal-body" style="display: flex; align-items: center;">
+                <div class="col-md-6 px-4 mb-4"> <!-- Added mb-4 for bottom margin -->
+                    <img src="images/services.png" class="img-fluid" style="max-height: 500px; padding-right: 20px;">
+                </div>
+                <div class="col-md-6 px-4">
+                    <h3>Booking Looking - Services Booking App</h3>
+                    <br>
+                    <p>A web based application that allows customers to book and schedule
+                        services with various service providers. Users can browse services, view
+                        availability, and book appointments with service providers. Allow
+                        customers to create an account and store their personal information,
+                        including payment details</p>
+                    <br><br>
+                    <p><b>Technologies:</b> Ruby on Rails, HTML, CSS, Bootstrap, Postgres, Ubuntu, Visual Studio Code</p>
+                    <br><br>    
+                    <p><b>Role:</b> Front-end and Back-end Developer</p>
+                    <!-- Add any additional information here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal8" class="modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal('modal8')">&times;</span>
+            </div>
+            <div class="modal-body" style="display: flex; align-items: center;">
+                <div class="col-md-6 px-4 mb-4"> <!-- Added mb-4 for bottom margin -->
+                    <img src="images/bid.png" class="img-fluid" style="max-height: 500px; padding-right: 20px;">
+                </div>
+                <div class="col-md-6 px-4">
+                    <h3>Bidding App</h3>
+                    <br>
+                    <p> A web based application that allows users to bid on items. Users can
+                        browse items, view item details, and place bids on items.</p>
+                    <br><br>
+                    <p><b>Technologies:</b> Ruby on Rails, HTML, CSS, Bootstrap, Postgres, Ubuntu, Visual Studio Code</p>
+                    <br><br>    
+                    <p><b>Role:</b> Front-end and Back-end Developer</p>
+                    <!-- Add any additional information here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal9" class="modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal('modal9')">&times;</span>
+            </div>
+            <div class="modal-body" style="display: flex; align-items: center;">
+                <div class="col-md-6 px-4 mb-4"> <!-- Added mb-4 for bottom margin -->
+                    <img src="images/toyapp.png" class="img-fluid" style="max-height: 500px; padding-right: 20px;">
+                </div>
+                <div class="col-md-6 px-4">
+                    <h3>Toy App</h3>
+                    <br>
+                    <p> A web based application that allows users to create, edit, and delete
+                        toys. Users can browse toys, view toy details, and view their toy dashboard.</p>
+                    <br><br>
+                    <p><b>Technologies:</b> Ruby on Rails, HTML, CSS, Bootstrap, Postgres, Ubuntu, Visual Studio Code</p>
+                    <br><br>    
+                    <p><b>Role:</b> Front-end and Back-end Developer</p>
+                    <!-- Add any additional information here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- -----contact------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>orquillojhonellajazmine@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+639454832600 (Globe)</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/JhonellaJazz/"target="blank"><i class="fa-brands fa-square-facebook"></i></i></a>
+                        <a href="https://www.linkedin.com/in/jhonella-jazmine-orquillo-237b74266/"target="blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/JhonellaJazmine"target="blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/J_Orquillo_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="youremail@example.com" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn  btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © JJO. Made with <i class="fa-solid fa-heart"></i> by Jhonella Jazmine</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby8ix6FnLDphNT-bJDeNf1BPh-o2tG47Lm6RtD42Qjr86CYViS1leyl6XEYhVZ4ickRMQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent sucessfully."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+      <script>
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+      </script>
+</body>
+</html>
